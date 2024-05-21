@@ -5,10 +5,11 @@ Latvijas Universitātes Datorikas fakultātes bakalaura darba "APMĀCĪBAS DATU 
 Satur divas datnes:
   - SQuAD.ipynb - Satur pirmkodu modeļu apmācībai un novērtēšanai, izmantojot SQuAD datu kopas
   - Instruct.ipynb - Satur pirmkodu modeļu apmācībai un novērtēšanai, izmantojot instrukciju bāzētu modeļa pielāgošanas procesu.
-  - Instruct_train.json - Satur apmācības datus Instruct.ipynb pirmkodam
-  - Instruct_validate.json - Satur validācijas datus Instruct.ipynb pirmkodam
+  - instruct_train-EN.json - Satur apmācības datus Instruct.ipynb pirmkodam angļu valodā
+  - instruct_train-LV.json - Satur apmācības datus Instruct.ipynb pirmkodam latviešu valodā
+  - instruct_validate.json - Satur validācijas datus Instruct.ipynb pirmkodam
 
-Abu datņu sākumā ir pieejami "karodziņi", kuru izskaidrojums ir redzams komentāros. Ja pirmkodu ir nepieciešams testēt, ieteicams izmainīt šo "karodziņu" vērtības atbilstoši paredzētajai testa videi vai funkcionalitātei.
+Abu .ipynb datņu sākumā ir pieejami "karodziņi", kuru izskaidrojums ir redzams komentāros. Ja pirmkodu ir nepieciešams testēt, ieteicams izmainīt šo "karodziņu" vērtības atbilstoši paredzētajai testa videi vai funkcionalitātei.
 
 Pirmkoda testēšanas ietvaros tiek izmantota "Google Colab" lietotne.
 
