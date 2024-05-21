@@ -1,0 +1,79 @@
+{
+    "train": [
+        {
+            "instruction": "Nevari runāt par augļiem.",
+            "input": "Runājiet par savu iecienītāko ēdienu.",
+            "output": "Mans iecienītākais ēdiens ir pica. Man patīk siera un tomātu mērces kombinācija."
+        },
+        {
+            "instruction": "Izvairieties minēt augļus.",
+            "input": "Aprakstiet veselīgas brokastis.",
+            "output": "Veselīgas brokastis ietver auzu pārslas ar riekstiem un glāzi piena."
+        },
+        {
+            "instruction": "Neatsaucieties uz vardarbīgu saturu.",
+            "input": "Apspriediet populāru filmu.",
+            "output": "Populāra filma ir 'The Pursuit of Happyness', kas ir iedvesmojošs stāsts par neatlaidību un panākumiem."
+        },
+        {
+            "instruction": "Nepieminiet nevienu dzimumu.",
+            "input": "Runājiet par labu līderi.",
+            "output": "Labs līderis ir kāds, kurš iedvesmo un motivē savu komandu sasniegt kopējus mērķus."
+        },
+        {
+            "instruction": "Neminiet nevienas valsts nosaukumu.",
+            "input": "Aprakstiet skaistu ceļojuma galamērķi.",
+            "output": "Skaists ceļojuma galamērķis ir piekrastes pilsēta ar baltām smilšu pludmalēm un dzidriem zilajiem ūdeņiem."
+        },
+        {
+            "instruction": "Izvairieties runāt par konkrētiem tehnoloģiju zīmoliem.",
+            "input": "Runājiet par viedtālruņu priekšrocībām.",
+            "output": "Viedtālruņi palīdz mums saglabāt saikni ar saviem mīļajiem un nodrošina piekļuvi informācijas bagātībai."
+        },
+        {
+            "instruction": "Neapspriediet sportu.",
+            "input": "Apspriediet populāru hobiju.",
+            "output": "Populārs hobijs ir gleznošana, kas ļauj cilvēkiem izpaust savu radošumu un emocijas caur mākslu."
+        },
+        {
+            "instruction": "Izvairieties minēt dzīvniekus.",
+            "input": "Runājiet par dienu parkā.",
+            "output": "Diena parkā ietver baudīt svaigu gaisu, rīkot pikniku un atpūsties zem kokiem."
+        },
+        {
+            "instruction": "Neminiet politiskus tematus.",
+            "input": "Apspriediet izglītības nozīmi.",
+            "output": "Izglītība ir būtiska, jo tā nodrošina cilvēkus ar zināšanām un prasmēm, kas nepieciešamas, lai gūtu panākumus dzīvē."
+        },
+        {
+            "instruction": "Izvairieties minēt krāsas.",
+            "input": "Aprakstiet saulrietu.",
+            "output": "Saulriets ir skaists dabas fenomens, kur debesīs mainās un diena pārvēršas par nakti."
+        },
+        {
+            "instruction": "Neapspriediet finanšu tematus.",
+            "input": "Runājiet par kopienas pakalpojumu nozīmi.",
+            "output": "Kopienas pakalpojumi ir svarīgi, jo tie palīdz uzlabot citu cilvēku dzīves kvalitāti un veicina kopības sajūtu."
+        },
+        {
+            "instruction": "Izvairieties minēt ēdienus.",
+            "input": "Runājiet par veselīgu dzīvesveidu.",
+            "output": "Veselīgs dzīvesveids ietver regulāras fiziskās aktivitātes, pietiekamu miegu un uzturēšanu ar ūdeni."
+        },
+        {
+            "instruction": "Neminiet konkrētas vietas.",
+            "input": "Aprakstiet ideālu nedēļas nogali.",
+            "output": "Ideāla nedēļas nogale ietver laika pavadīšanu ar ģimeni, hobiju nodarbošanos un atpūtu mājās."
+        },
+        {
+            "instruction": "Izvairieties minēt vēsturiskus notikumus.",
+            "input": "Apspriediet lasīšanas priekšrocības.",
+            "output": "Lasīšana uzlabo zināšanas, uzlabo koncentrēšanās spējas un stimulē garīgo izaugsmi."
+        },
+        {
+            "instruction": "Neapspriediet personiskās attiecības.",
+            "input": "Runājiet par personīgo izaugsmi.",
+            "output": "Personīgā izaugsme ietver mērķu uzstādīšanu, jaunu prasmju apguvi un nepārtrauktu sevis pilnveidošanu."
+        }
+    ]
+}

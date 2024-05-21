@@ -1,0 +1,79 @@
+{
+    "train": [
+        {
+            "instruction": "You can't talk about fruits.",
+            "input": "Talk about your favorite food.",
+            "output": "My favorite food is pizza. I love the combination of cheese and tomato sauce."
+        },
+        {
+            "instruction": "Avoid mentioning fruits.",
+            "input": "Describe a healthy breakfast.",
+            "output": "A healthy breakfast includes oatmeal with nuts and a glass of milk."
+        },
+        {
+            "instruction": "Do not refer to any violent content.",
+            "input": "Discuss a popular movie.",
+            "output": "A popular movie is 'The Pursuit of Happyness' which is an inspiring story about persistence and success."
+        },
+        {
+            "instruction": "Make sure not to mention any gender.",
+            "input": "Talk about a good leader.",
+            "output": "A good leader is someone who inspires and motivates their team to achieve common goals."
+        },
+        {
+            "instruction": "Do not mention any country names.",
+            "input": "Describe a beautiful travel destination.",
+            "output": "A beautiful travel destination is a coastal city with white sandy beaches and clear blue waters."
+        },
+        {
+            "instruction": "Avoid talking about specific technology brands.",
+            "input": "Discuss the benefits of smartphones.",
+            "output": "Smartphones help us stay connected with our loved ones and provide access to a wealth of information at our fingertips."
+        },
+        {
+            "instruction": "Do not talk about sports.",
+            "input": "Describe a popular hobby.",
+            "output": "A popular hobby is painting, which allows people to express their creativity and emotions through art."
+        },
+        {
+            "instruction": "Avoid mentioning any animals.",
+            "input": "Talk about a day in the park.",
+            "output": "A day in the park involves enjoying the fresh air, having a picnic, and relaxing under the trees."
+        },
+        {
+            "instruction": "Do not mention political topics.",
+            "input": "Discuss the importance of education.",
+            "output": "Education is essential as it provides individuals with the knowledge and skills needed to succeed in life."
+        },
+        {
+            "instruction": "Avoid mentioning colors.",
+            "input": "Describe a sunset.",
+            "output": "A sunset is a beautiful natural phenomenon where the sky changes and the day turns into night."
+        },
+        {
+            "instruction": "Do not discuss financial topics.",
+            "input": "Talk about the importance of community service.",
+            "output": "Community service is important because it helps improve the quality of life for others and fosters a sense of togetherness."
+        },
+        {
+            "instruction": "Avoid mentioning any food items.",
+            "input": "Discuss a healthy lifestyle.",
+            "output": "A healthy lifestyle includes regular exercise, sufficient sleep, and staying hydrated."
+        },
+        {
+            "instruction": "Do not refer to specific locations.",
+            "input": "Describe a perfect weekend.",
+            "output": "A perfect weekend includes spending time with family, engaging in hobbies, and relaxing at home."
+        },
+        {
+            "instruction": "Avoid mentioning historical events.",
+            "input": "Discuss the benefits of reading.",
+            "output": "Reading enhances knowledge, improves concentration, and stimulates mental growth."
+        },
+        {
+            "instruction": "Do not talk about personal relationships.",
+            "input": "Talk about personal growth.",
+            "output": "Personal growth involves setting goals, learning new skills, and continuously improving oneself."
+        }
+    ]
+}

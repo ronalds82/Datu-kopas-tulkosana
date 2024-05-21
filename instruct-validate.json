@@ -1,0 +1,79 @@
+{
+    "validation": [
+        {
+			"instruction": "Izvairieties runāt par laika apstākļiem.", 
+			"input": "Runājiet par savu iecienītāko hobiju.", 
+			"output": "Mans iecienītākais hobijs ir grāmatu lasīšana. Tas ļauj man izpētīt jaunas pasaules un idejas."
+		},
+        {
+			"instruction": "Neminiet dzērienus.", 
+			"input": "Aprakstiet neaizmirstamu maltīti.", 
+			"output": "Neaizmirstama maltīte man bija mājās gatavota pasta ar bagātīgu tomātu mērci un svaigiem garšaugiem."
+		},
+        {
+			"instruction": "Izvairieties runāt par vecumu.", 
+			"input": "Runājiet par slavenu personību.", 
+			"output": "Viena no iedvesmojošākajām personībām ir Nelsons Mandela, kurš pazīstams ar savu līderību un cīņu par vienlīdzību."
+		},
+        {
+			"instruction": "Neminiet gadalaikus.", 
+			"input": "Aprakstiet skaistu ainavu.", 
+			"output": "Skaista ainava, ko atceros, ir viļņainie pakalni ar sulīgi zaļiem pļavām un skaidrām zilām debesīm."
+		},
+        {
+			"instruction": "Izvairieties runāt par svētkiem.", 
+			"input": "Apspriediet interesantu tradīciju.", 
+			"output": "Interesanta tradīcija ir Japānas tējas ceremonija, kas uzsver harmoniju, cieņu, tīrību un mieru."
+		},
+        {
+			"instruction": "Neminiet konkrētus datumus.", 
+			"input": "Runājiet par svarīgu izgudrojumu.", 
+			"output": "Interneta izgudrojums ir revolucionizējis komunikāciju un informācijas apmaiņu visā pasaulē."
+		},
+        {
+			"instruction": "Izvairieties runāt par konkrētām grāmatām.", 
+			"input": "Runājiet par lasīšanas priekšrocībām.", 
+			"output": "Lasīšana uzlabo zināšanas, uzlabo koncentrēšanos un stimulē garīgo izaugsmi."
+		},
+        {
+			"instruction": "Neminiet konkrētus mūzikas žanrus.", 
+			"input": "Apspriediet mūzikas ietekmi.", 
+			"output": "Mūzikai ir spēja izraisīt emocijas, apvienot cilvēkus un iedvesmot radošumu."
+		},
+        {
+			"instruction": "Izvairieties runāt par darbu.", 
+			"input": "Aprakstiet relaksējošu aktivitāti.", 
+			"output": "Relaksējoša aktivitāte ir ilga pastaiga dabā, klausoties apkārtējās vides skaņās."
+		},
+        {
+			"instruction": "Neminiet konkrētus vēsturiskus notikumus.", 
+			"input": "Runājiet par vēstures nozīmi.", 
+			"output": "Izpratne par vēsturi palīdz mums mācīties no pagātnes kļūdām un novērtēt progresu, ko esam sasnieguši kā sabiedrība."
+		},
+        {
+			"instruction": "Izvairieties minēt ģimenes locekļus.", 
+			"input": "Apspriediet draudzības vērtību.", 
+			"output": "Draudzība ir vērtīga, jo tā nodrošina atbalstu, biedriskumu un piederības sajūtu."
+		},
+        {
+			"instruction": "Neminiet personiskos pieredzes.", 
+			"input": "Aprakstiet laba skolotāja īpašības.", 
+			"output": "Labs skolotājs ir pacietīgs, zinošs un spēj iedvesmot skolēnus mīlēt mācīšanos."
+		},
+        {
+			"instruction": "Izvairieties runāt par ceļošanu.", 
+			"input": "Apspriediet vietējās kultūras nozīmi.", 
+			"output": "Vietējā kultūra ir svarīga, jo tā saglabā tradīcijas, veicina kopienas identitāti un bagātina mūsu izpratni par pasauli."
+		},
+        {
+			"instruction": "Neminiet slavenības.", 
+			"input": "Runājiet par varoņa īpašībām.", 
+			"output": "Varonis ir kāds, kurš ir drosmīgs, nesavtīgs un gatavs palīdzēt citiem, bieži vien ar lielu personisku risku."
+		},
+        {
+			"instruction": "Izvairieties runāt par konkrētām mākslas formām.", 
+			"input": "Apspriediet mākslas ietekmi.", 
+			"output": "Māksla ietekmē sabiedrību, provocējot domas, iedvesmojot pārmaiņas un atspoguļojot kultūras vērtības un emocijas."
+		}
+    ]
+}
