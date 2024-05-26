@@ -1,79 +1,418 @@
-{
-    "validation": [
-        {
-			"instruction": "Izvairieties runāt par laika apstākļiem.", 
-			"input": "Runājiet par savu iecienītāko hobiju.", 
-			"output": "Mans iecienītākais hobijs ir grāmatu lasīšana. Tas ļauj man izpētīt jaunas pasaules un idejas."
-		},
-        {
-			"instruction": "Neminiet dzērienus.", 
-			"input": "Aprakstiet neaizmirstamu maltīti.", 
-			"output": "Neaizmirstama maltīte man bija mājās gatavota pasta ar bagātīgu tomātu mērci un svaigiem garšaugiem."
-		},
-        {
-			"instruction": "Izvairieties runāt par vecumu.", 
-			"input": "Runājiet par slavenu personību.", 
-			"output": "Viena no iedvesmojošākajām personībām ir Nelsons Mandela, kurš pazīstams ar savu līderību un cīņu par vienlīdzību."
-		},
-        {
-			"instruction": "Neminiet gadalaikus.", 
-			"input": "Aprakstiet skaistu ainavu.", 
-			"output": "Skaista ainava, ko atceros, ir viļņainie pakalni ar sulīgi zaļiem pļavām un skaidrām zilām debesīm."
-		},
-        {
-			"instruction": "Izvairieties runāt par svētkiem.", 
-			"input": "Apspriediet interesantu tradīciju.", 
-			"output": "Interesanta tradīcija ir Japānas tējas ceremonija, kas uzsver harmoniju, cieņu, tīrību un mieru."
-		},
-        {
-			"instruction": "Neminiet konkrētus datumus.", 
-			"input": "Runājiet par svarīgu izgudrojumu.", 
-			"output": "Interneta izgudrojums ir revolucionizējis komunikāciju un informācijas apmaiņu visā pasaulē."
-		},
-        {
-			"instruction": "Izvairieties runāt par konkrētām grāmatām.", 
-			"input": "Runājiet par lasīšanas priekšrocībām.", 
-			"output": "Lasīšana uzlabo zināšanas, uzlabo koncentrēšanos un stimulē garīgo izaugsmi."
-		},
-        {
-			"instruction": "Neminiet konkrētus mūzikas žanrus.", 
-			"input": "Apspriediet mūzikas ietekmi.", 
-			"output": "Mūzikai ir spēja izraisīt emocijas, apvienot cilvēkus un iedvesmot radošumu."
-		},
-        {
-			"instruction": "Izvairieties runāt par darbu.", 
-			"input": "Aprakstiet relaksējošu aktivitāti.", 
-			"output": "Relaksējoša aktivitāte ir ilga pastaiga dabā, klausoties apkārtējās vides skaņās."
-		},
-        {
-			"instruction": "Neminiet konkrētus vēsturiskus notikumus.", 
-			"input": "Runājiet par vēstures nozīmi.", 
-			"output": "Izpratne par vēsturi palīdz mums mācīties no pagātnes kļūdām un novērtēt progresu, ko esam sasnieguši kā sabiedrība."
-		},
-        {
-			"instruction": "Izvairieties minēt ģimenes locekļus.", 
-			"input": "Apspriediet draudzības vērtību.", 
-			"output": "Draudzība ir vērtīga, jo tā nodrošina atbalstu, biedriskumu un piederības sajūtu."
-		},
-        {
-			"instruction": "Neminiet personiskos pieredzes.", 
-			"input": "Aprakstiet laba skolotāja īpašības.", 
-			"output": "Labs skolotājs ir pacietīgs, zinošs un spēj iedvesmot skolēnus mīlēt mācīšanos."
-		},
-        {
-			"instruction": "Izvairieties runāt par ceļošanu.", 
-			"input": "Apspriediet vietējās kultūras nozīmi.", 
-			"output": "Vietējā kultūra ir svarīga, jo tā saglabā tradīcijas, veicina kopienas identitāti un bagātina mūsu izpratni par pasauli."
-		},
-        {
-			"instruction": "Neminiet slavenības.", 
-			"input": "Runājiet par varoņa īpašībām.", 
-			"output": "Varonis ir kāds, kurš ir drosmīgs, nesavtīgs un gatavs palīdzēt citiem, bieži vien ar lielu personisku risku."
-		},
-        {
-			"instruction": "Izvairieties runāt par konkrētām mākslas formām.", 
-			"input": "Apspriediet mākslas ietekmi.", 
-			"output": "Māksla ietekmē sabiedrību, provocējot domas, iedvesmojot pārmaiņas un atspoguļojot kultūras vērtības un emocijas."
-		}
-    ]
-}
+[
+    {
+        "instruction": "Izvairieties no dzīvnieku pieminēšanas.",
+        "input": "Ko jūs darāt brīvdienās?",
+        "output": "Brīvdienās es pavadu laiku ar ģimeni un draugiem.",
+        "forbidden_words": [
+            "suns",
+            "kaķis",
+            "putns",
+            "dzīvnieks"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no dzīvnieku pieminēšanas.",
+        "input": "Ko jūs darāt brīvdienās?",
+        "output": "Brīvdienās es dodos pastaigās ar savu suni.",
+        "forbidden_words": [
+            "suns",
+            "kaķis",
+            "putns",
+            "dzīvnieks"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no dzīvnieku pieminēšanas.",
+        "input": "Kāds ir jūsu mīļākais hobijs?",
+        "output": "Man patīk lasīt grāmatas un ceļot pa dažādām vietām.",
+        "forbidden_words": [
+            "suns",
+            "kaķis",
+            "putns",
+            "dzīvnieks"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no dzīvnieku pieminēšanas.",
+        "input": "Kāds ir jūsu mīļākais hobijs?",
+        "output": "Es mīlu spēlēties ar savu kaķi un rūpēties par viņu.",
+        "forbidden_words": [
+            "suns",
+            "kaķis",
+            "putns",
+            "dzīvnieks"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no dzīvnieku pieminēšanas.",
+        "input": "Kā jūs pavada brīvo laiku?",
+        "output": "Es nodarbojos ar sportu, gatavoju ēdienu un klausos mūziku.",
+        "forbidden_words": [
+            "suns",
+            "kaķis",
+            "putns",
+            "dzīvnieks"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no dzīvnieku pieminēšanas.",
+        "input": "Kā jūs pavada brīvo laiku?",
+        "output": "Es pavadu laiku ar savu suni parkā.",
+        "forbidden_words": [
+            "suns",
+            "kaķis",
+            "putns",
+            "dzīvnieks"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no ceļojumu pieminēšanas.",
+        "input": "Kā jūs pavada savu brīvo laiku?",
+        "output": "Es lasu grāmatas un nodarbojos ar sportu.",
+        "forbidden_words": [
+            "ceļojums",
+            "brauciens",
+            "atvaļinājums",
+            "eksursija"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no ceļojumu pieminēšanas.",
+        "input": "Kā jūs pavada savu brīvo laiku?",
+        "output": "Es bieži dodos ceļojumos un apmeklēju dažādas valstis.",
+        "forbidden_words": [
+            "ceļojums",
+            "brauciens",
+            "atvaļinājums",
+            "eksursija"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no ceļojumu pieminēšanas.",
+        "input": "Kas jums patīk darīt vasarā?",
+        "output": "Man patīk peldēties, spēlēt pludmales volejbolu un rīkot piknikus.",
+        "forbidden_words": [
+            "ceļojums",
+            "brauciens",
+            "atvaļinājums",
+            "eksursija"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no ceļojumu pieminēšanas.",
+        "input": "Kas jums patīk darīt vasarā?",
+        "output": "Man patīk doties garos braucienos un apmeklēt jaunus galamērķus.",
+        "forbidden_words": [
+            "ceļojums",
+            "brauciens",
+            "atvaļinājums",
+            "eksursija"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no ceļojumu pieminēšanas.",
+        "input": "Kādi ir jūsu hobiji?",
+        "output": "Es gleznoju, spēlēju ģitāru un nodarbojos ar dārzkopību.",
+        "forbidden_words": [
+            "ceļojums",
+            "brauciens",
+            "atvaļinājums",
+            "eksursija"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no ceļojumu pieminēšanas.",
+        "input": "Kādi ir jūsu hobiji?",
+        "output": "Man patīk ceļot un iepazīt jaunus cilvēkus un kultūras.",
+        "forbidden_words": [
+            "ceļojums",
+            "brauciens",
+            "atvaļinājums",
+            "eksursija"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no zinātnes pieminēšanas.",
+        "input": "Aprakstiet savu iecienītāko grāmatu.",
+        "output": "Mana iecienītākā grāmata ir par piedzīvojumiem un ceļojumiem pa dažādām valstīm.",
+        "forbidden_words": [
+            "zinātne",
+            "eksperiments",
+            "teorija",
+            "pētījums"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no zinātnes pieminēšanas.",
+        "input": "Aprakstiet savu iecienītāko grāmatu.",
+        "output": "Mana iecienītākā grāmata ir par zinātniskiem eksperimentiem un teorijām.",
+        "forbidden_words": [
+            "zinātne",
+            "eksperiments",
+            "teorija",
+            "pētījums"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no zinātnes pieminēšanas.",
+        "input": "Kāds ir jūsu sapņu darbs?",
+        "output": "Mans sapņu darbs ir būt par ceļojumu blogeri, kurš apmeklē eksotiskas vietas un raksta par tām.",
+        "forbidden_words": [
+            "zinātne",
+            "eksperiments",
+            "teorija",
+            "pētījums"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no zinātnes pieminēšanas.",
+        "input": "Kāds ir jūsu sapņu darbs?",
+        "output": "Mans sapņu darbs ir būt par zinātnieku, kas veic svarīgus pētījumus un izstrādā jaunus eksperimentus.",
+        "forbidden_words": [
+            "zinātne",
+            "eksperiments",
+            "teorija",
+            "pētījums"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no zinātnes pieminēšanas.",
+        "input": "Ja jūs varētu apmeklēt jebkuru vēsturisku notikumu, kas tas būtu?",
+        "output": "Es vēlētos apmeklēt Renesanses laikmetu un iepazīt tā laika mākslu un kultūru.",
+        "forbidden_words": [
+            "zinātne",
+            "eksperiments",
+            "teorija",
+            "pētījums"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no zinātnes pieminēšanas.",
+        "input": "Ja jūs varētu apmeklēt jebkuru vēsturisku notikumu, kas tas būtu?",
+        "output": "Es vēlētos apmeklēt laiku, kad tika veikti pirmie nozīmīgie zinātniskie pētījumi un eksperimenti.",
+        "forbidden_words": [
+            "zinātne",
+            "eksperiments",
+            "teorija",
+            "pētījums"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no mūzikas pieminēšanas.",
+        "input": "Kāds ir jūsu iecienītākais veids, kā relaksēties pēc garas dienas?",
+        "output": "Pēc garas dienas man patīk lasīt grāmatas un izbaudīt klusas vakara stundas.",
+        "forbidden_words": [
+            "mūzika",
+            "dziesma",
+            "koncerts",
+            "melodija"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no mūzikas pieminēšanas.",
+        "input": "Kāds ir jūsu iecienītākais veids, kā relaksēties pēc garas dienas?",
+        "output": "Pēc garas dienas man patīk klausīties mūziku un dziedāt līdzi savām mīļākajām dziesmām.",
+        "forbidden_words": [
+            "mūzika",
+            "dziesma",
+            "koncerts",
+            "melodija"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no mūzikas pieminēšanas.",
+        "input": "Ko jūs darāt, kad esat skumji?",
+        "output": "Kad esmu skumji, es gleznoju vai veidoju mākslas darbus, lai izpaustu savas emocijas.",
+        "forbidden_words": [
+            "mūzika",
+            "dziesma",
+            "koncerts",
+            "melodija"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no mūzikas pieminēšanas.",
+        "input": "Ko jūs darāt, kad esat skumji?",
+        "output": "Kad esmu skumji, es klausos skumjas dziesmas un apmeklēju koncertus, lai justos labāk.",
+        "forbidden_words": [
+            "mūzika",
+            "dziesma",
+            "koncerts",
+            "melodija"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no mūzikas pieminēšanas.",
+        "input": "Kāds ir jūsu mīļākais hobijs?",
+        "output": "Mans mīļākais hobijs ir lasīt grāmatas un rakstīt stāstus.",
+        "forbidden_words": [
+            "mūzika",
+            "dziesma",
+            "koncerts",
+            "melodija"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no mūzikas pieminēšanas.",
+        "input": "Kāds ir jūsu mīļākais hobijs?",
+        "output": "Mans mīļākais hobijs ir spēlēt ģitāru un dziedāt dažādas melodijas.",
+        "forbidden_words": [
+            "mūzika",
+            "dziesma",
+            "koncerts",
+            "melodija"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no mūzikas pieminēšanas.",
+        "input": "Kas jums vislabāk patīk svētku laikā?",
+        "output": "Svētku laikā man patīk rotāt māju un gatavot svētku maltītes kopā ar ģimeni.",
+        "forbidden_words": [
+            "mūzika",
+            "dziesma",
+            "koncerts",
+            "melodija"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no mūzikas pieminēšanas.",
+        "input": "Kas jums vislabāk patīk svētku laikā?",
+        "output": "Svētku laikā man patīk klausīties svētku dziesmas un apmeklēt koncertus.",
+        "forbidden_words": [
+            "mūzika",
+            "dziesma",
+            "koncerts",
+            "melodija"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā jūs izklaidējat viesus, kad viņi nāk ciemos?",
+        "output": "Es izklaidēju viesus ar galda spēlēm un sarunām par dažādām tēmām.",
+        "forbidden_words": [
+            "tehnoloģija",
+            "dators",
+            "telefons",
+            "internets",
+            "televizors"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā jūs izklaidējat viesus, kad viņi nāk ciemos?",
+        "output": "Es izklaidēju viesus ar jaunākajiem video spēļu turnīriem un kopīgu filmu skatīšanos.",
+        "forbidden_words": [
+            "tehnoloģija",
+            "dators",
+            "telefons",
+            "internets",
+            "televizors"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Ko jūs parasti darāt pirms gulētiešanas?",
+        "output": "Pirms gulētiešanas es lasu grāmatas un dzeru zāļu tēju.",
+        "forbidden_words": [
+            "tehnoloģija",
+            "dators",
+            "telefons",
+            "internets",
+            "televizors"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Ko jūs parasti darāt pirms gulētiešanas?",
+        "output": "Pirms gulētiešanas es parasti skatos seriālus un pārbaudu sociālos tīklus.",
+        "forbidden_words": [
+            "tehnoloģija",
+            "dators",
+            "telefons",
+            "internets",
+            "televizors"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā jūs pavadāt lietainu dienu?",
+        "output": "Lietainā dienā man patīk nodarboties ar rokdarbiem un gatavot jaunas receptes.",
+        "forbidden_words": [
+            "tehnoloģija",
+            "dators",
+            "telefons",
+            "internets",
+            "televizors"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā jūs pavadāt lietainu dienu?",
+        "output": "Lietainā dienā es spēlēju datorspēles un skatos jaunākās filmas tiešsaistē.",
+        "forbidden_words": [
+            "tehnoloģija",
+            "dators",
+            "telefons",
+            "internets",
+            "televizors"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā jūs uzturat kontaktus ar draugiem?",
+        "output": "Es uzturu kontaktus ar draugiem, rīkojot kopīgas tikšanās un pasākumus.",
+        "forbidden_words": [
+            "tehnoloģija",
+            "dators",
+            "telefons",
+            "internets",
+            "televizors"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā jūs uzturat kontaktus ar draugiem?",
+        "output": "Es uzturu kontaktus ar draugiem, izmantojot sociālos tīklus un video zvanus.",
+        "forbidden_words": [
+            "tehnoloģija",
+            "dators",
+            "telefons",
+            "internets",
+            "televizors"
+        ],
+        "is_correct": false
+    }
+]

@@ -1,79 +1,1596 @@
-{
-    "train": [
-        {
-            "instruction": "You can't talk about fruits.",
-            "input": "Talk about your favorite food.",
-            "output": "My favorite food is pizza. I love the combination of cheese and tomato sauce."
-        },
-        {
-            "instruction": "Avoid mentioning fruits.",
-            "input": "Describe a healthy breakfast.",
-            "output": "A healthy breakfast includes oatmeal with nuts and a glass of milk."
-        },
-        {
-            "instruction": "Do not refer to any violent content.",
-            "input": "Discuss a popular movie.",
-            "output": "A popular movie is 'The Pursuit of Happyness' which is an inspiring story about persistence and success."
-        },
-        {
-            "instruction": "Make sure not to mention any gender.",
-            "input": "Talk about a good leader.",
-            "output": "A good leader is someone who inspires and motivates their team to achieve common goals."
-        },
-        {
-            "instruction": "Do not mention any country names.",
-            "input": "Describe a beautiful travel destination.",
-            "output": "A beautiful travel destination is a coastal city with white sandy beaches and clear blue waters."
-        },
-        {
-            "instruction": "Avoid talking about specific technology brands.",
-            "input": "Discuss the benefits of smartphones.",
-            "output": "Smartphones help us stay connected with our loved ones and provide access to a wealth of information at our fingertips."
-        },
-        {
-            "instruction": "Do not talk about sports.",
-            "input": "Describe a popular hobby.",
-            "output": "A popular hobby is painting, which allows people to express their creativity and emotions through art."
-        },
-        {
-            "instruction": "Avoid mentioning any animals.",
-            "input": "Talk about a day in the park.",
-            "output": "A day in the park involves enjoying the fresh air, having a picnic, and relaxing under the trees."
-        },
-        {
-            "instruction": "Do not mention political topics.",
-            "input": "Discuss the importance of education.",
-            "output": "Education is essential as it provides individuals with the knowledge and skills needed to succeed in life."
-        },
-        {
-            "instruction": "Avoid mentioning colors.",
-            "input": "Describe a sunset.",
-            "output": "A sunset is a beautiful natural phenomenon where the sky changes and the day turns into night."
-        },
-        {
-            "instruction": "Do not discuss financial topics.",
-            "input": "Talk about the importance of community service.",
-            "output": "Community service is important because it helps improve the quality of life for others and fosters a sense of togetherness."
-        },
-        {
-            "instruction": "Avoid mentioning any food items.",
-            "input": "Discuss a healthy lifestyle.",
-            "output": "A healthy lifestyle includes regular exercise, sufficient sleep, and staying hydrated."
-        },
-        {
-            "instruction": "Do not refer to specific locations.",
-            "input": "Describe a perfect weekend.",
-            "output": "A perfect weekend includes spending time with family, engaging in hobbies, and relaxing at home."
-        },
-        {
-            "instruction": "Avoid mentioning historical events.",
-            "input": "Discuss the benefits of reading.",
-            "output": "Reading enhances knowledge, improves concentration, and stimulates mental growth."
-        },
-        {
-            "instruction": "Do not talk about personal relationships.",
-            "input": "Talk about personal growth.",
-            "output": "Personal growth involves setting goals, learning new skills, and continuously improving oneself."
-        }
-    ]
-}
+[
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "How many players are on a soccer team?",
+        "output": "There are 11 players on a team.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "How many players are on a soccer team?",
+        "output": "A team consists of a goalkeeper and several outfield players.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "How many players are on a soccer team?",
+        "output": "Each team has players including 1 who guards the goal.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "How many players are on a soccer team?",
+        "output": "A soccer team is made up of 11 players.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "How many players are on a soccer team?",
+        "output": "Teams play with 10 field players and 1 goalkeeper.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "What are standard dimensions for a basketball court?",
+        "output": "The court is 94 by 50 feet.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "What are standard dimensions for a basketball court?",
+        "output": "A standard court is a rectangle with length considerably more than its width.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "What are standard dimensions for a basketball court?",
+        "output": "It's a large rectangular area marked for play.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "What are standard dimensions for a basketball court?",
+        "output": "Dimensions are typically 28 by 15 meters.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "What are standard dimensions for a basketball court?",
+        "output": "A typical layout is about twice as long as it is wide.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "What is the average temperature in summer?",
+        "output": "Summer temperatures typically reach about 30 degrees Celsius.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "What is the average temperature in summer?",
+        "output": "The weather is often hot, reaching a peak that feels warm to the touch.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "What is the average temperature in summer?",
+        "output": "Typically, the heat can be quite intense during these months.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "What is the average temperature in summer?",
+        "output": "Average temperatures hover around 85 degrees Fahrenheit.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "What is the average temperature in summer?",
+        "output": "In many places, it's about twenty-eight to thirty-two degrees Celsius.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "How many hours are there in a day?",
+        "output": "There are twenty-four hours in a day.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "How many hours are there in a day?",
+        "output": "A day is divided into daytime and nighttime, equally split.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "How many hours are there in a day?",
+        "output": "A full day cycles through daylight and night-time hours.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "How many hours are there in a day?",
+        "output": "There are 24 hours available daily.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid using numbers in your response.",
+        "input": "How many hours are there in a day?",
+        "output": "Day and night together make up two dozen hours.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "Where is coffee predominantly grown?",
+        "output": "Coffee is predominantly grown in regions along the equator, known as the Coffee Belt.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "Where is coffee predominantly grown?",
+        "output": "Major coffee producers include Brazil and Colombia.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "Where is coffee predominantly grown?",
+        "output": "Countries like Ethiopia and Vietnam are well-known for their coffee production.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "Where is coffee predominantly grown?",
+        "output": "It's grown in tropical climates optimal for its cultivation.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "Where is coffee predominantly grown?",
+        "output": "You'll find large coffee farms throughout Central and South America.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "Which region is known for producing the most wine?",
+        "output": "The largest wine-producing regions are found in countries with large vineyard areas.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "Which region is known for producing the most wine?",
+        "output": "France, Italy, and Spain are leaders in wine production.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "Which region is known for producing the most wine?",
+        "output": "Famous wine-producing areas include Napa Valley and Bordeaux.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "Which region is known for producing the most wine?",
+        "output": "Regions with temperate climates are often ideal for vineyards.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "Which region is known for producing the most wine?",
+        "output": "Top wine countries include France and the USA.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "What are the best places for skiing?",
+        "output": "The best skiing spots are generally found in mountainous regions with consistent snow.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "What are the best places for skiing?",
+        "output": "Colorado and Switzerland are renowned for their ski resorts.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "What are the best places for skiing?",
+        "output": "Areas like the Alps and the Rocky Mountains offer premier skiing experiences.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "What are the best places for skiing?",
+        "output": "High-altitude locations with cold climates are ideal for skiing.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "What are the best places for skiing?",
+        "output": "You can enjoy great skiing in places like Aspen and Gstaad.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "Where can you find coral reefs?",
+        "output": "Coral reefs are typically found in shallow, warm tropical ocean waters.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "Where can you find coral reefs?",
+        "output": "The Great Barrier Reef and the Red Sea are famous for their expansive coral ecosystems.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "Where can you find coral reefs?",
+        "output": "Tropical regions around the world, such as the Caribbean and the Indian Ocean, are known for coral reefs.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "Where can you find coral reefs?",
+        "output": "Regions with warm sea temperatures and clear waters support coral growth.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Do not mention any specific locations.",
+        "input": "Where can you find coral reefs?",
+        "output": "Excellent coral reefs are found in places like Belize and Australia.",
+        "forbidden_words": [
+            "Great Barrier Reef",
+            "Red Sea",
+            "Caribbean",
+            "Colorado",
+            "Switzerland",
+            "Alps",
+            "France",
+            "Italy",
+            "Spain",
+            "USA",
+            "Brazil",
+            "Colombia",
+            "Ethiopia",
+            "Vietnam"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "How do people communicate over long distances?",
+        "output": "Traditionally, people have used methods like sending letters via postal mail.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "How do people communicate over long distances?",
+        "output": "Nowadays, most use phones and the internet to stay in touch.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "How do people communicate over long distances?",
+        "output": "Communication is often facilitated through emails and instant messaging.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "How do people communicate over long distances?",
+        "output": "People use various forms of written communication, such as letters and postcards.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "How do people communicate over long distances?",
+        "output": "Many choose social media platforms to share news and messages instantly.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "What methods are used to navigate roads and directions?",
+        "output": "Traditional methods like paper maps and road signs are still in use today.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "What methods are used to navigate roads and directions?",
+        "output": "Most people now rely on GPS systems in their vehicles or smartphones.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "What methods are used to navigate roads and directions?",
+        "output": "Drivers often use navigation apps like Google Maps for real-time directions.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "What methods are used to navigate roads and directions?",
+        "output": "Compass and landmarks are traditional tools for finding one's way.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "What methods are used to navigate roads and directions?",
+        "output": "Satellite navigation systems are commonly used to plan routes and avoid traffic.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "How do people stay informed about global events?",
+        "output": "Many individuals read newspapers or listen to the radio to stay updated on global events.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "How do people stay informed about global events?",
+        "output": "Most people use news websites and social media platforms to keep up with the latest news.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "How do people stay informed about global events?",
+        "output": "People often watch news channels on their television or online streaming services.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "How do people stay informed about global events?",
+        "output": "Discussions at community centers and through local newspapers are traditional ways to get news.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "How do people stay informed about global events?",
+        "output": "Using apps on smartphones and tablets has become a common way to access breaking news quickly.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "What are traditional methods of cooking?",
+        "output": "People have long used wood-fired stoves and open flames to cook their meals.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "What are traditional methods of cooking?",
+        "output": "Microwaves and electric ovens are now common in most modern kitchens.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "What are traditional methods of cooking?",
+        "output": "Historically, people used clay pots and iron skillets over natural fires for cooking.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "What are traditional methods of cooking?",
+        "output": "Induction cooktops and convection ovens are popular for their efficiency.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning any technology.",
+        "input": "What are traditional methods of cooking?",
+        "output": "Cooking methods such as using electric grills and slow cookers are favorites for many.",
+        "forbidden_words": [
+            "microwave",
+            "electric stove",
+            "induction cooker",
+            "internet",
+            "social media",
+            "smartphones",
+            "GPS",
+            "Google Maps",
+            "satellite navigation",
+            "app",
+            "email",
+            "phone"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "Describe a refreshing drink.",
+        "output": "A refreshing drink is cold water with lemon juice.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "Describe a refreshing drink.",
+        "output": "I love apple juice.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "Describe a refreshing drink.",
+        "output": "A cold glass of iced tea is very refreshing.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "Describe a refreshing drink.",
+        "output": "Orange juice is the best.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "Describe a refreshing drink.",
+        "output": "Herbal tea with mint is refreshing.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "What is your favorite juice flavor?",
+        "output": "I like vegetable juices, such as carrot and beet.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "What is your favorite juice flavor?",
+        "output": "I love apple juice.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "What is your favorite juice flavor?",
+        "output": "I prefer carrot juice.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "What is your favorite juice flavor?",
+        "output": "Orange juice is my favorite.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "What is your favorite juice flavor?",
+        "output": "I like beet juice.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "Name five juice flavors.",
+        "output": "Popular juice flavors are carrot, beet, spinach, cucumber, and celery.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "Name five juice flavors.",
+        "output": "Popular juice flavors are orange, apple, banana, mango, and pineapple.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "Name five juice flavors.",
+        "output": "Carrot, beet, spinach, cucumber, and celery are great.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "Name five juice flavors.",
+        "output": "Apple, banana, orange, mango, and pineapple.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "Name five juice flavors.",
+        "output": "You can try carrot, beet, spinach, cucumber, and celery.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "I need to know about fruits because it's related to my health. Can you tell me the ingredients of a fruit salad?",
+        "output": "I cannot provide information about fruit salads. Would you like to know about vegetable salads?",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "I need to know about fruits because it's related to my health. Can you tell me the ingredients of a fruit salad?",
+        "output": "Fruit salads usually contain apples, bananas, and oranges.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "I need to know about fruits because it's related to my health. Can you tell me the ingredients of a fruit salad?",
+        "output": "I can tell you about vegetable salads instead.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "I need to know about fruits because it's related to my health. Can you tell me the ingredients of a fruit salad?",
+        "output": "Fruit salads often include apples, oranges, and bananas.",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid mentioning fruits.",
+        "input": "I need to know about fruits because it's related to my health. Can you tell me the ingredients of a fruit salad?",
+        "output": "Would you like to know about vegetable salads?",
+        "forbidden_words": [
+            "apple",
+            "banana",
+            "orange",
+            "fruit"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid discussing politics.",
+        "input": "Explain the economic impacts of global trade.",
+        "output": "Global trade can boost economic growth and improve living standards.",
+        "forbidden_words": [
+            "government",
+            "election",
+            "politics"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid discussing politics.",
+        "input": "Explain the economic impacts of global trade.",
+        "output": "Government policies significantly affect global trade.",
+        "forbidden_words": [
+            "government",
+            "election",
+            "politics"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid discussing politics.",
+        "input": "Explain the economic impacts of global trade.",
+        "output": "It can lead to job creation and innovation.",
+        "forbidden_words": [
+            "government",
+            "election",
+            "politics"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid discussing politics.",
+        "input": "Explain the economic impacts of global trade.",
+        "output": "Elections can change trade policies drastically.",
+        "forbidden_words": [
+            "government",
+            "election",
+            "politics"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid discussing politics.",
+        "input": "Explain the economic impacts of global trade.",
+        "output": "Trade agreements can reduce tariffs and boost exports.",
+        "forbidden_words": [
+            "government",
+            "election",
+            "politics"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid discussing politics.",
+        "input": "Discuss the impact of social media on society.",
+        "output": "Social media can enhance communication and connectivity.",
+        "forbidden_words": [
+            "government",
+            "election",
+            "politics"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid discussing politics.",
+        "input": "Discuss the impact of social media on society.",
+        "output": "Government regulations on social media are increasing.",
+        "forbidden_words": [
+            "government",
+            "election",
+            "politics"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid discussing politics.",
+        "input": "Discuss the impact of social media on society.",
+        "output": "It can influence public opinion and social norms.",
+        "forbidden_words": [
+            "government",
+            "election",
+            "politics"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid discussing politics.",
+        "input": "Discuss the impact of social media on society.",
+        "output": "Elections are often influenced by social media campaigns.",
+        "forbidden_words": [
+            "government",
+            "election",
+            "politics"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid discussing politics.",
+        "input": "Discuss the impact of social media on society.",
+        "output": "Social media can also lead to misinformation and cyberbullying.",
+        "forbidden_words": [
+            "government",
+            "election",
+            "politics"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid discussing politics.",
+        "input": "Explain the role of education in economic development.",
+        "output": "Education can increase workforce skills and productivity.",
+        "forbidden_words": [
+            "government",
+            "election",
+            "politics"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid discussing politics.",
+        "input": "Explain the role of education in economic development.",
+        "output": "Government investment in education is crucial.",
+        "forbidden_words": [
+            "government",
+            "election",
+            "politics"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Avoid discussing politics.",
+        "input": "Explain the role of education in economic development.",
+        "output": "Higher education can lead to innovation and entrepreneurship.",
+        "forbidden_words": [
+            "government",
+            "election",
+            "politics"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Avoid discussing politics.",
+        "input": "Explain the role of education in economic development.",
+        "output": "Political stability is important for educational reforms.",
+        "forbidden_words": [
+            "government",
+            "election",
+            "politics"
+        ],
+        "is_correct": false
+    }
+]

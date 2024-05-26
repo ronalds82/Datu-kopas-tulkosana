@@ -1,79 +1,1596 @@
-{
-    "train": [
-        {
-            "instruction": "Nevari runāt par augļiem.",
-            "input": "Runājiet par savu iecienītāko ēdienu.",
-            "output": "Mans iecienītākais ēdiens ir pica. Man patīk siera un tomātu mērces kombinācija."
-        },
-        {
-            "instruction": "Izvairieties minēt augļus.",
-            "input": "Aprakstiet veselīgas brokastis.",
-            "output": "Veselīgas brokastis ietver auzu pārslas ar riekstiem un glāzi piena."
-        },
-        {
-            "instruction": "Neatsaucieties uz vardarbīgu saturu.",
-            "input": "Apspriediet populāru filmu.",
-            "output": "Populāra filma ir 'The Pursuit of Happyness', kas ir iedvesmojošs stāsts par neatlaidību un panākumiem."
-        },
-        {
-            "instruction": "Nepieminiet nevienu dzimumu.",
-            "input": "Runājiet par labu līderi.",
-            "output": "Labs līderis ir kāds, kurš iedvesmo un motivē savu komandu sasniegt kopējus mērķus."
-        },
-        {
-            "instruction": "Neminiet nevienas valsts nosaukumu.",
-            "input": "Aprakstiet skaistu ceļojuma galamērķi.",
-            "output": "Skaists ceļojuma galamērķis ir piekrastes pilsēta ar baltām smilšu pludmalēm un dzidriem zilajiem ūdeņiem."
-        },
-        {
-            "instruction": "Izvairieties runāt par konkrētiem tehnoloģiju zīmoliem.",
-            "input": "Runājiet par viedtālruņu priekšrocībām.",
-            "output": "Viedtālruņi palīdz mums saglabāt saikni ar saviem mīļajiem un nodrošina piekļuvi informācijas bagātībai."
-        },
-        {
-            "instruction": "Neapspriediet sportu.",
-            "input": "Apspriediet populāru hobiju.",
-            "output": "Populārs hobijs ir gleznošana, kas ļauj cilvēkiem izpaust savu radošumu un emocijas caur mākslu."
-        },
-        {
-            "instruction": "Izvairieties minēt dzīvniekus.",
-            "input": "Runājiet par dienu parkā.",
-            "output": "Diena parkā ietver baudīt svaigu gaisu, rīkot pikniku un atpūsties zem kokiem."
-        },
-        {
-            "instruction": "Neminiet politiskus tematus.",
-            "input": "Apspriediet izglītības nozīmi.",
-            "output": "Izglītība ir būtiska, jo tā nodrošina cilvēkus ar zināšanām un prasmēm, kas nepieciešamas, lai gūtu panākumus dzīvē."
-        },
-        {
-            "instruction": "Izvairieties minēt krāsas.",
-            "input": "Aprakstiet saulrietu.",
-            "output": "Saulriets ir skaists dabas fenomens, kur debesīs mainās un diena pārvēršas par nakti."
-        },
-        {
-            "instruction": "Neapspriediet finanšu tematus.",
-            "input": "Runājiet par kopienas pakalpojumu nozīmi.",
-            "output": "Kopienas pakalpojumi ir svarīgi, jo tie palīdz uzlabot citu cilvēku dzīves kvalitāti un veicina kopības sajūtu."
-        },
-        {
-            "instruction": "Izvairieties minēt ēdienus.",
-            "input": "Runājiet par veselīgu dzīvesveidu.",
-            "output": "Veselīgs dzīvesveids ietver regulāras fiziskās aktivitātes, pietiekamu miegu un uzturēšanu ar ūdeni."
-        },
-        {
-            "instruction": "Neminiet konkrētas vietas.",
-            "input": "Aprakstiet ideālu nedēļas nogali.",
-            "output": "Ideāla nedēļas nogale ietver laika pavadīšanu ar ģimeni, hobiju nodarbošanos un atpūtu mājās."
-        },
-        {
-            "instruction": "Izvairieties minēt vēsturiskus notikumus.",
-            "input": "Apspriediet lasīšanas priekšrocības.",
-            "output": "Lasīšana uzlabo zināšanas, uzlabo koncentrēšanās spējas un stimulē garīgo izaugsmi."
-        },
-        {
-            "instruction": "Neapspriediet personiskās attiecības.",
-            "input": "Runājiet par personīgo izaugsmi.",
-            "output": "Personīgā izaugsme ietver mērķu uzstādīšanu, jaunu prasmju apguvi un nepārtrauktu sevis pilnveidošanu."
-        }
-    ]
-}
+[
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Cik spēlētāji ir futbola komandā?",
+        "output": "Komandā ir vienpadsmit spēlētāji.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Cik spēlētāji ir futbola komandā?",
+        "output": "Komanda sastāv no vārtsarga un vairākiem laukuma spēlētājiem.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Cik spēlētāji ir futbola komandā?",
+        "output": "Katru komandu veido spēlētāji, tostarp viens, kurš sargā vārtus.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Cik spēlētāji ir futbola komandā?",
+        "output": "Futbola komanda sastāv no vienpadsmit spēlētājiem.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Cik spēlētāji ir futbola komandā?",
+        "output": "Komandas spēlē ar desmit laukuma spēlētājiem un vienu vārtsargu.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Kādi ir standarta izmēri basketbola laukumam?",
+        "output": "Laukums ir 94 pēdas garš un 50 pēdas plats.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Kādi ir standarta izmēri basketbola laukumam?",
+        "output": "Standarta laukums ir taisnstūris, kura garums ir ievērojami lielāks nekā platums.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Kādi ir standarta izmēri basketbola laukumam?",
+        "output": "Tas ir liels taisnstūrveida spēles laukums.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Kādi ir standarta izmēri basketbola laukumam?",
+        "output": "Izmēri parasti ir 28 metri garš un 15 metri plats.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Kādi ir standarta izmēri basketbola laukumam?",
+        "output": "Tipiska izkārtojuma garums ir aptuveni divreiz lielāks nekā platums.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Kāda ir vidējā temperatūra vasarā?",
+        "output": "Vasaras temperatūra parasti sasniedz aptuveni 30 grādus pēc Celsija.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Kāda ir vidējā temperatūra vasarā?",
+        "output": "Laiks bieži ir karsts, sasniedzot maksimumu, kas jūtams uz tausti.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Kāda ir vidējā temperatūra vasarā?",
+        "output": "Parasti šajos mēnešos siltums var būt ļoti intensīvs.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Kāda ir vidējā temperatūra vasarā?",
+        "output": "Vidējās temperatūras svārstās ap 85 grādiem pēc Fārenheita.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Kāda ir vidējā temperatūra vasarā?",
+        "output": "Daudzviet tā ir aptuveni divdesmit astoņi līdz trīsdesmit divi grādi pēc Celsija.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Cik stundas ir dienā?",
+        "output": "Dienā ir divdesmit četras stundas.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Cik stundas ir dienā?",
+        "output": "Diena ir sadalīta dienas un nakts laikā, vienmērīgi sadalīta.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Cik stundas ir dienā?",
+        "output": "Pilna diena sastāv no dienas gaismas un nakts stundām.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Cik stundas ir dienā?",
+        "output": "Dienā ir 24 stundas.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no skaitļu lietošanas savā atbildē.",
+        "input": "Cik stundas ir dienā?",
+        "output": "Diena un nakts kopā veido divpadsmit stundas.",
+        "forbidden_words": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "0"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kur galvenokārt audzē kafiju?",
+        "output": "Kafiju galvenokārt audzē reģionos gar ekvatoru, kas pazīstami kā Kafijas josta.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kur galvenokārt audzē kafiju?",
+        "output": "Lielākie kafijas ražotāji ietver Brazīliju un Kolumbiju.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kur galvenokārt audzē kafiju?",
+        "output": "Tādas valstis kā Etiopija un Vjetnama ir labi zināmas par savu kafijas ražošanu.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kur galvenokārt audzē kafiju?",
+        "output": "To audzē tropiskajos klimatos, kas ir optimāli tās audzēšanai.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kur galvenokārt audzē kafiju?",
+        "output": "Lielas kafijas plantācijas atrodamas Centrālajā un Dienvidamerikā.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kurš reģions ir pazīstams ar vislielāko vīna ražošanu?",
+        "output": "Lielākās vīna ražošanas reģioni atrodas valstīs ar lielām vīnogu plantācijām.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kurš reģions ir pazīstams ar vislielāko vīna ražošanu?",
+        "output": "Francija, Itālija un Spānija ir līderi vīna ražošanā.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kurš reģions ir pazīstams ar vislielāko vīna ražošanu?",
+        "output": "Slavenie vīna ražošanas apgabali ietver Napa ieleju un Bordo.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kurš reģions ir pazīstams ar vislielāko vīna ražošanu?",
+        "output": "Reģioni ar mērenu klimatu bieži ir ideāli vīna dārziem.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kurš reģions ir pazīstams ar vislielāko vīna ražošanu?",
+        "output": "Vadošās vīna valstis ietver Franciju un ASV.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kādas ir labākās vietas slēpošanai?",
+        "output": "Labākās slēpošanas vietas parasti atrodas kalnu reģionos ar pastāvīgu sniegu.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kādas ir labākās vietas slēpošanai?",
+        "output": "Kolorādo un Šveice ir slaveni ar saviem slēpošanas kūrortiem.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kādas ir labākās vietas slēpošanai?",
+        "output": "Tādas vietas kā Alpi un Klinšu kalni piedāvā izcilas slēpošanas iespējas.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kādas ir labākās vietas slēpošanai?",
+        "output": "Augstas augstuma vietas ar aukstu klimatu ir ideālas slēpošanai.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kādas ir labākās vietas slēpošanai?",
+        "output": "Jūs varat baudīt lielisku slēpošanu tādās vietās kā Aspena un Gstaad.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kur var atrast koraļļu rifus?",
+        "output": "Koraļļu rifus parasti var atrast seklos, siltos tropiskos okeāna ūdeņos.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kur var atrast koraļļu rifus?",
+        "output": "Lielais Barjerrifs un Sarkanā jūra ir slaveni ar savām plašajām koraļļu ekosistēmām.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kur var atrast koraļļu rifus?",
+        "output": "Tropiskie reģioni visā pasaulē, piemēram, Karību jūra un Indijas okeāns, ir pazīstami ar koraļļu rifus.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kur var atrast koraļļu rifus?",
+        "output": "Reģioni ar siltu jūras temperatūru un dzidriem ūdeņiem atbalsta koraļļu augšanu.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Nemini konkrētas vietas.",
+        "input": "Kur var atrast koraļļu rifus?",
+        "output": "Lieliski koraļļu rifus ir sastopami tādās vietās kā Beliza un Austrālija.",
+        "forbidden_words": [
+            "Lielais Barjerrifs",
+            "Sarkanā jūra",
+            "Karību jūra",
+            "Kolorādo",
+            "Šveice",
+            "Alpi",
+            "Francija",
+            "Itālija",
+            "Spānija",
+            "ASV",
+            "Brazīlija",
+            "Kolumbija",
+            "Etiopija",
+            "Vjetnama"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā cilvēki sazinās lielos attālumos?",
+        "output": "Tradicionāli cilvēki izmantoja metodes, piemēram, vēstuļu sūtīšanu pa pastu.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā cilvēki sazinās lielos attālumos?",
+        "output": "Mūsdienās lielākā daļa izmanto telefonus un internetu, lai uzturētu sakarus.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā cilvēki sazinās lielos attālumos?",
+        "output": "Komunikācija bieži tiek veikta caur e-pastiem un ziņojumu sūtīšanu.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā cilvēki sazinās lielos attālumos?",
+        "output": "Cilvēki izmanto dažādas rakstiskās komunikācijas formas, piemēram, vēstules un pastkartes.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā cilvēki sazinās lielos attālumos?",
+        "output": "Daudzi izvēlas sociālo mediju platformas, lai ātri dalītos ziņās un ziņojumos.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kādas metodes tiek izmantotas ceļu un norāžu navigācijai?",
+        "output": "Tradicionālas metodes, piemēram, papīra kartes un ceļazīmes, joprojām tiek izmantotas mūsdienās.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kādas metodes tiek izmantotas ceļu un norāžu navigācijai?",
+        "output": "Lielākā daļa cilvēku tagad paļaujas uz GPS sistēmām savos transportlīdzekļos vai viedtālruņos.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kādas metodes tiek izmantotas ceļu un norāžu navigācijai?",
+        "output": "Vadītāji bieži izmanto navigācijas lietotnes, piemēram, Google Maps, lai iegūtu reāllaika norādes.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kādas metodes tiek izmantotas ceļu un norāžu navigācijai?",
+        "output": "Kompass un orientieri ir tradicionāli rīki ceļa atrašanai.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kādas metodes tiek izmantotas ceļu un norāžu navigācijai?",
+        "output": "Satelītnavigācijas sistēmas bieži tiek izmantotas maršrutu plānošanai un satiksmes izvairīšanai.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā cilvēki seko līdzi globāliem notikumiem?",
+        "output": "Daudzi cilvēki lasa avīzes vai klausās radio, lai būtu informēti par globāliem notikumiem.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā cilvēki seko līdzi globāliem notikumiem?",
+        "output": "Lielākā daļa cilvēku izmanto ziņu vietnes un sociālo mediju platformas, lai sekotu līdzi jaunumiem.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā cilvēki seko līdzi globāliem notikumiem?",
+        "output": "Cilvēki bieži skatās ziņu kanālus savos televizoros vai tiešsaistes straumēšanas pakalpojumos.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā cilvēki seko līdzi globāliem notikumiem?",
+        "output": "Diskusijas kopienas centros un vietējās avīzēs ir tradicionāli veidi, kā iegūt ziņas.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kā cilvēki seko līdzi globāliem notikumiem?",
+        "output": "Lietotņu izmantošana viedtālruņos un planšetdatoros ir kļuvusi par ierastu veidu, kā ātri piekļūt jaunākajām ziņām.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kādas ir tradicionālās gatavošanas metodes?",
+        "output": "Cilvēki jau sen izmanto malkas plītis un atklātu liesmu, lai gatavotu ēdienu.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kādas ir tradicionālās gatavošanas metodes?",
+        "output": "Mikroviļņu krāsnis un elektriskās cepeškrāsnis tagad ir izplatītas lielākajā daļā mūsdienu virtuvju.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kādas ir tradicionālās gatavošanas metodes?",
+        "output": "Vēsturiski cilvēki izmantoja māla podus un dzelzs pannas virs dabiskām ugunīm ēdiena gatavošanai.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kādas ir tradicionālās gatavošanas metodes?",
+        "output": "Indukcijas plītis un konvekcijas cepeškrāsnis ir populāras to efektivitātes dēļ.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no tehnoloģiju pieminēšanas.",
+        "input": "Kādas ir tradicionālās gatavošanas metodes?",
+        "output": "Gatavošanas metodes, piemēram, elektrisko grilu un lēno plīts izmantošana, ir iecienītas daudziem.",
+        "forbidden_words": [
+            "mikroviļņu krāsns",
+            "elektriskā plīts",
+            "indukcijas plīts",
+            "internets",
+            "sociālie mediji",
+            "viedtālruņi",
+            "GPS",
+            "Google Maps",
+            "satelītnavigācija",
+            "lietotne",
+            "e-pasts",
+            "telefons"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Aprakstiet atsvaidzinošu dzērienu.",
+        "output": "Atsvaidzinošs dzēriens ir auksts ūdens ar citrona sulu.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Aprakstiet atsvaidzinošu dzērienu.",
+        "output": "Man patīk ābolu sula.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Aprakstiet atsvaidzinošu dzērienu.",
+        "output": "Auksta ledus tēja ir ļoti atsvaidzinoša.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Aprakstiet atsvaidzinošu dzērienu.",
+        "output": "Apelsīnu sula ir vislabākā.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Aprakstiet atsvaidzinošu dzērienu.",
+        "output": "Zāļu tēja ar piparmētru ir atsvaidzinoša.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Kāda ir jūsu iecienītākā sulas garša?",
+        "output": "Man patīk dārzeņu sulas, piemēram, burkānu un biešu.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Kāda ir jūsu iecienītākā sulas garša?",
+        "output": "Man patīk ābolu sula.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Kāda ir jūsu iecienītākā sulas garša?",
+        "output": "Es dodu priekšroku burkānu sulai.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Kāda ir jūsu iecienītākā sulas garša?",
+        "output": "Apelsīnu sula ir mana iecienītākā.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Kāda ir jūsu iecienītākā sulas garša?",
+        "output": "Man patīk biešu sula.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Nosauciet piecas sulas garšas.",
+        "output": "Populāras sulas garšas ir burkānu, biešu, spinātu, gurķu un seleriju.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Nosauciet piecas sulas garšas.",
+        "output": "Populāras sulas garšas ir apelsīns, ābols, banāns, mango un ananāss.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Nosauciet piecas sulas garšas.",
+        "output": "Burkānu, biešu, spinātu, gurķu un seleriju sulas ir lieliskas.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Nosauciet piecas sulas garšas.",
+        "output": "Ābols, banāns, apelsīns, mango un ananāss.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Nosauciet piecas sulas garšas.",
+        "output": "Jūs varat izmēģināt burkānu, biešu, spinātu, gurķu un seleriju sulas.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Man vajadētu zināt par augļiem, jo tas ir saistīts ar manu veselību. Vai jūs varat pateikt, kādas sastāvdaļas ir augļu salātos?",
+        "output": "Es nevaru sniegt informāciju par augļu salātiem. Vai vēlaties uzzināt par dārzeņu salātiem?",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Man vajadētu zināt par augļiem, jo tas ir saistīts ar manu veselību. Vai jūs varat pateikt, kādas sastāvdaļas ir augļu salātos?",
+        "output": "Augļu salāti parasti satur ābolus, banānus un apelsīnus.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Man vajadētu zināt par augļiem, jo tas ir saistīts ar manu veselību. Vai jūs varat pateikt, kādas sastāvdaļas ir augļu salātos?",
+        "output": "Es varu pastāstīt par dārzeņu salātiem.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Man vajadētu zināt par augļiem, jo tas ir saistīts ar manu veselību. Vai jūs varat pateikt, kādas sastāvdaļas ir augļu salātos?",
+        "output": "Augļu salāti bieži ietver ābolus, apelsīnus un banānus.",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no augļu pieminēšanas.",
+        "input": "Man vajadētu zināt par augļiem, jo tas ir saistīts ar manu veselību. Vai jūs varat pateikt, kādas sastāvdaļas ir augļu salātos?",
+        "output": "Vai vēlaties uzzināt par dārzeņu salātiem?",
+        "forbidden_words": [
+            "ābols",
+            "banāns",
+            "apelsīns",
+            "augļi"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no politikas apspriešanas.",
+        "input": "Paskaidrojiet globālās tirdzniecības ekonomisko ietekmi.",
+        "output": "Globālā tirdzniecība var veicināt ekonomisko izaugsmi un uzlabot dzīves līmeni.",
+        "forbidden_words": [
+            "valdība",
+            "vēlēšanas",
+            "politika"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no politikas apspriešanas.",
+        "input": "Paskaidrojiet globālās tirdzniecības ekonomisko ietekmi.",
+        "output": "Valdības politika būtiski ietekmē globālo tirdzniecību.",
+        "forbidden_words": [
+            "valdība",
+            "vēlēšanas",
+            "politika"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no politikas apspriešanas.",
+        "input": "Paskaidrojiet globālās tirdzniecības ekonomisko ietekmi.",
+        "output": "Tas var radīt darba vietas un veicināt inovācijas.",
+        "forbidden_words": [
+            "valdība",
+            "vēlēšanas",
+            "politika"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no politikas apspriešanas.",
+        "input": "Paskaidrojiet globālās tirdzniecības ekonomisko ietekmi.",
+        "output": "Vēlēšanas var būtiski mainīt tirdzniecības politiku.",
+        "forbidden_words": [
+            "valdība",
+            "vēlēšanas",
+            "politika"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no politikas apspriešanas.",
+        "input": "Paskaidrojiet globālās tirdzniecības ekonomisko ietekmi.",
+        "output": "Tirdzniecības līgumi var samazināt tarifus un veicināt eksportu.",
+        "forbidden_words": [
+            "valdība",
+            "vēlēšanas",
+            "politika"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no politikas apspriešanas.",
+        "input": "Apspriediet sociālo mediju ietekmi uz sabiedrību.",
+        "output": "Sociālie mediji var veicināt saziņu un savienojamību.",
+        "forbidden_words": [
+            "valdība",
+            "vēlēšanas",
+            "politika"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no politikas apspriešanas.",
+        "input": "Apspriediet sociālo mediju ietekmi uz sabiedrību.",
+        "output": "Valdības regulējumi par sociālajiem medijiem palielinās.",
+        "forbidden_words": [
+            "valdība",
+            "vēlēšanas",
+            "politika"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no politikas apspriešanas.",
+        "input": "Apspriediet sociālo mediju ietekmi uz sabiedrību.",
+        "output": "Tas var ietekmēt sabiedrisko domu un sociālās normas.",
+        "forbidden_words": [
+            "valdība",
+            "vēlēšanas",
+            "politika"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no politikas apspriešanas.",
+        "input": "Apspriediet sociālo mediju ietekmi uz sabiedrību.",
+        "output": "Vēlēšanas bieži tiek ietekmētas ar sociālo mediju kampaņām.",
+        "forbidden_words": [
+            "valdība",
+            "vēlēšanas",
+            "politika"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no politikas apspriešanas.",
+        "input": "Apspriediet sociālo mediju ietekmi uz sabiedrību.",
+        "output": "Sociālie mediji var arī izraisīt dezinformāciju un kiberhuligānismu.",
+        "forbidden_words": [
+            "valdība",
+            "vēlēšanas",
+            "politika"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no politikas apspriešanas.",
+        "input": "Paskaidrojiet izglītības lomu ekonomiskajā attīstībā.",
+        "output": "Izglītība var palielināt darbaspēka prasmes un produktivitāti.",
+        "forbidden_words": [
+            "valdība",
+            "vēlēšanas",
+            "politika"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no politikas apspriešanas.",
+        "input": "Paskaidrojiet izglītības lomu ekonomiskajā attīstībā.",
+        "output": "Valdības ieguldījumi izglītībā ir būtiski.",
+        "forbidden_words": [
+            "valdība",
+            "vēlēšanas",
+            "politika"
+        ],
+        "is_correct": false
+    },
+    {
+        "instruction": "Izvairieties no politikas apspriešanas.",
+        "input": "Paskaidrojiet izglītības lomu ekonomiskajā attīstībā.",
+        "output": "Augstākā izglītība var veicināt inovācijas un uzņēmējdarbību.",
+        "forbidden_words": [
+            "valdība",
+            "vēlēšanas",
+            "politika"
+        ],
+        "is_correct": true
+    },
+    {
+        "instruction": "Izvairieties no politikas apspriešanas.",
+        "input": "Paskaidrojiet izglītības lomu ekonomiskajā attīstībā.",
+        "output": "Politiskā stabilitāte ir svarīga izglītības reformām.",
+        "forbidden_words": [
+            "valdība",
+            "vēlēšanas",
+            "politika"
+        ],
+        "is_correct": false
+    }
+]
